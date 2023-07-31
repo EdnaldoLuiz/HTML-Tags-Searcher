@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link th:href="@{result.css}" rel="stylesheet" />
+    <title>Tag Info Result</title>
+</head>
+<body>
+    <h1>Tags e suas quantidades encontradas</h1>
+    <table>
+        <tr>
+            <th>tag</th>
+            <th>quantidade</th>
+        </tr>
+        <tr th:each="tagInfo : ${tagInfoList}">
+            <td th:text="${tagInfo.tag}"></td>
+            <td th:text="${tagInfo.quantidade}"></td>
+        </tr>
+    </table>
+</body>
+</html>
+

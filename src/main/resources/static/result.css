@@ -1,0 +1,27 @@
+h1 {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 40%;
+    margin: auto;
+    border: 1px solid black;
+    justify-content: center;
+    text-align: center;
+}
+
+th {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+}
+
+td {
+   width: 50%;
+   border: 1px solid black;
+    padding: 8px;
+    text-align: center; 
+}
