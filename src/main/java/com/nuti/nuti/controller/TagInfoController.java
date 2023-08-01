@@ -50,7 +50,10 @@ public class TagInfoController {
             Document document = Jsoup.connect(url).get();
             List<String> tags = new ArrayList<>();
             for (Element e : document.getAllElements()) {
-                tags.add(e.tagName().toLowerCase());
+            String tagName = e.tagName().toLowerCase();
+            if (!tagName.equals("#root")) {
+                tags.add(tagName);
+                }
             }
             
             List<TagInfo> tagInfoList = new ArrayList<>();

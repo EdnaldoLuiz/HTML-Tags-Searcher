@@ -1,7 +1,18 @@
  <h1 align="center"> Nuti-desafio-tags</h1>
 
-<h2>Visao geral do Projeto:</h2>
+<h2>Observaçoes:</h2>
+<p>existem algumas tags que não são muito conhecidas, mas existem e fazem um conjunto com a tag de svg, alem de outras que so são possiveis com auxilio de frameworks.</p>
 
+![imagem ilustrativa de algumas tags pouco conhecidas](src/main/resources/imgs/code.png)
+
+<h2>Visao geral do Projeto:</h2>
+<h3>Formulario de busca</h3>
+
+![Alt text](src/main/resources/imgs/form.png)
+
+<h3>Tabela de resultados</h3>
+
+![Alt text](src/main/resources/imgs/result.png)
 
 <h2>Principais Bibliotecas para a Solução:</h2>
 
