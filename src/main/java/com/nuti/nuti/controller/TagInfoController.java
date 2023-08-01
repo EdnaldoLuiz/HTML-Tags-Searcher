@@ -65,6 +65,7 @@ public class TagInfoController {
             tagInfoRepository.saveAll(tagInfoList);
     
             model.addAttribute("tagInfoList", tagInfoList);
+            model.addAttribute("url", url.trim());
             return "result"; 
         } catch (IOException e) {
             e.printStackTrace();

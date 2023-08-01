@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <link th:href="@{result.css}" rel="stylesheet" />
@@ -8,6 +8,7 @@
 <body>
     <h1>Tags e suas quantidades encontradas</h1>
     <table>
+        <p>URL: <span th:text="${url}"></span></p>
         <tr>
             <th>tag</th>
             <th>quantidade</th>
@@ -17,6 +18,7 @@
             <td th:text="${tagInfo.quantidade}"></td>
         </tr>
     </table>
+    <a class="btn-voltar" th:href="@{/}">Voltar</a>
 </body>
 </html>
 

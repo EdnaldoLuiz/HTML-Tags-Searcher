@@ -3,16 +3,22 @@
 <h2>Observaçoes:</h2>
 <p>existem algumas tags que não são muito conhecidas, mas existem e fazem um conjunto com a tag de svg, alem de outras que so são possiveis com auxilio de frameworks.</p>
 
-![imagem ilustrativa de algumas tags pouco conhecidas](src/main/resources/imgs/code.png)
+<div align="center">
+    <img width="90%" src="src/main/resources/imgs/code.png">
+</div>
 
 <h2>Visao geral do Projeto:</h2>
 <h3>Formulario de busca</h3>
 
-![Alt text](src/main/resources/imgs/form.png)
+<div align="center">
+    <img width="90%" src="src/main/resources/imgs/form.png">
+</div>
 
 <h3>Tabela de resultados</h3>
 
-![Alt text](src/main/resources/imgs/result.png)
+<div align="center">
+    <img width="90%" src="src/main/resources/imgs/resultado.png">
+</div>
 
 <h2>Principais Bibliotecas para a Solução:</h2>
 
@@ -58,6 +64,16 @@ Bilioteca usada para utilizar as interfaces e anotações ajudando a manipular o
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-data-jpa</artifactId>
+</dependency>
+```
+
+### Thymeleaf
+Bilioteca usada para integrar as respostas do controller em páginas html
+
+```xml
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-thymeleaf</artifactId>
 </dependency>
 ```
 
