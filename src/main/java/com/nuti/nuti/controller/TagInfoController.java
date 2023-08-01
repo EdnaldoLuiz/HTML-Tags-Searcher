@@ -23,6 +23,16 @@ import java.util.List;
 @Controller
 public class TagInfoController {
 
+    private boolean isValidURL(String url) {
+        try {
+            Document document = Jsoup.connect(url).get();
+            // Adicione aqui outras verificações se necessário.
+            return true; // Se a URL é válida e a página foi redirecionada para a página de resultado.
+        } catch (IOException e) {
+            return false; // Se ocorreu algum erro ou a página não foi redirecionada corretamente.
+        }
+    }
+
     @Autowired
     private UrlInfoRepository urlInfoRepository;
 
@@ -35,12 +45,12 @@ public class TagInfoController {
     }
 
     @PostMapping("/")
-    public String processUrl(@RequestParam("url") String url, Model model) {
+    public String processUrl(@RequestParam("url") String url, Model model) throws IOException {
         if (url == null || url.trim().isEmpty()) {
             return "error"; 
         }
     
-        try {
+        if (isValidURL(url.trim())) {
             UrlInfo urlInfo = urlInfoRepository.findByUrl(url.trim());
             if (urlInfo == null) {
                 urlInfo = new UrlInfo(url.trim());
@@ -50,9 +60,9 @@ public class TagInfoController {
             Document document = Jsoup.connect(url).get();
             List<String> tags = new ArrayList<>();
             for (Element e : document.getAllElements()) {
-            String tagName = e.tagName().toLowerCase();
-            if (!tagName.equals("#root")) {
-                tags.add(tagName);
+                String tagName = e.tagName().toLowerCase();
+                if (!tagName.equals("#root")) {
+                    tags.add(tagName);
                 }
             }
             
@@ -62,16 +72,15 @@ public class TagInfoController {
                 tagInfoList.add(new TagInfo(tag, count, urlInfo));
             }
     
-            tagInfoRepository.saveAll(tagInfoList);
+            if (!tagInfoList.isEmpty()) {
+                tagInfoRepository.saveAll(tagInfoList);
+            }
     
             model.addAttribute("tagInfoList", tagInfoList);
             model.addAttribute("url", url.trim());
             return "result"; 
-        } catch (IOException e) {
-            e.printStackTrace();
-            return "error"; 
+        } else {
+            return "error"; // Redireciona para a página de erro se a URL não é válida.
         }
     }
-    
-
 }

@@ -1,4 +1,4 @@
--- Active: 1689801237547@@127.0.0.1@3306@nuti
+-- Active: 1690903553751@@containers-us-west-105.railway.app@7537@railway
 -- Consulta que busca a quantidade de tags e as tags de acordo com a URL
 SELECT tb_tags.tag, tb_tags.quantidade
 FROM tb_tags

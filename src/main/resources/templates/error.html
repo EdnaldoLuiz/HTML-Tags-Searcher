@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Error</title>
+    <link th:href="@{error.css}" rel="stylesheet" />
+    <title>Erro</title>
 </head>
 <body>
-    <h1>Error</h1>
-    <p>Sorry, there was an error processing the URL.</p>
+    <div class="error-container">
+        <h1>Oops! Ocorreu um erro.</h1>
+        <p>A URL informada é inválida ou inexistente.</p>
+        <a class="btn-voltar" href="/">Voltar</a>
+    </div>
 </body>
 </html>

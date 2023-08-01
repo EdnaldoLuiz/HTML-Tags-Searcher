@@ -20,6 +20,13 @@
     <img width="90%" src="src/main/resources/imgs/resultado.png">
 </div>
 
+<h2>Tabelas SQL e consultas:</h2>
+<p> os arquivos SQL presentes no projeto, podem ser encontrados em src/main/resources/db/migration/</p>
+
+<div align="center">
+    <img width="90%" src="src/main/resources/imgs/tables.png">
+</div>
+
 <h2>Principais Bibliotecas para a Solução:</h2>
 
 ### JSoup
