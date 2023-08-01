@@ -31,5 +31,4 @@ public class TagInfo {
         this.quantidade =  qtd;
         this.urlInfo = url;
     }
-
 }

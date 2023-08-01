@@ -24,5 +24,4 @@ public class UrlInfo {
     public UrlInfo(String url) {
         this.url = url;
     }
-    
 }
