@@ -2,6 +2,8 @@ package com.nuti.nuti.controller;
 
 import com.nuti.nuti.model.Tags;
 import com.nuti.nuti.model.Urls;
+import com.nuti.nuti.repository.TagsRepository;
+import com.nuti.nuti.repository.UrlsRepository;
 import com.nuti.nuti.service.HtmlParserService;
 import com.nuti.nuti.service.UrlValidator;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,18 +20,31 @@ import java.util.List;
 public class TagInfoController {
 
     @Autowired
+    private UrlsRepository urlsRepository;
+
+    @Autowired
+    private TagsRepository tagsRepository;
+
+    @Autowired
     private UrlValidator validador;
 
     @Autowired
     private HtmlParserService parseador;
 
     @GetMapping("/")
-    public String showForm() {
-        return "form";
+    public String exibirFormularioETabelas(Model model) {
+        List<Urls> urlList = urlsRepository.findAll();
+        List<Tags> tagList = tagsRepository.findAll();
+        
+        model.addAttribute("urlList", urlList);
+        model.addAttribute("tagList", tagList);
+        
+        return "index";
     }
 
+
     @PostMapping("/")
-    public String processUrl(@RequestParam("url") String url, Model model) throws IOException {
+    public String processarUrl(@RequestParam("url") String url, Model model) throws IOException {
 
         Urls urlInfo = validador.validarESalvar(url);
 

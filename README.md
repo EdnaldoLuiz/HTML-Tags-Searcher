@@ -20,6 +20,12 @@
     <img width="90%" src="src/main/resources/imgs/form.png">
 </div>
 
+<h3>Tabela com todos registros do MySQL</h3>
+
+<div align="center">
+    <img width="90%" src="src/main/resources/imgs/table.png">
+</div>
+
 <h3>URL passada incorretamente</h3>
 
 <div align="center">
@@ -48,6 +54,18 @@
 </div>
 
 <h2>Código Java:</h2>
+
+<h3>Interfaces responsaveis para salvar</h3>
+<p>verificar se a URL esta sendo valida, remover os espaços em branco, e caso ela não esteja presente no banco de dados, salvar</p>
+
+<div align="center">
+    <img width="90%" src="src/main/resources/imgs/interface1.png">
+</div>
+
+<div align="center">
+    <img width="90%" src="src/main/resources/imgs/interface2.png">
+</div>
+
 <h3>Salvar no banco de dados</h3>
 <p>verificar se a URL esta sendo valida, remover os espaços em branco, e caso ela não esteja presente no banco de dados, salvar</p>
 
