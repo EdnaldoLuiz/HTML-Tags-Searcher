@@ -7,6 +7,12 @@
     <img width="90%" src="src/main/resources/imgs/code.png">
 </div>
 
+<h2>Estrutura do Projeto:</h2>
+
+<div align="center">
+    <img width="90%" src="src/main/resources/imgs/tree.png">
+</div>
+
 <h2>Visao geral do Projeto:</h2>
 <h3>Formulario de busca</h3>
 
@@ -35,7 +41,7 @@
 </div>
 
 <h3>Consultas</h3>
-<p>consulta que retorna todas as tags e suas quantidades econtradas que foram salvas na pesquiva de acordo com a url informada</p>
+<p>consulta que retorna todas as tags e suas quantidades econtradas que foram salvas na pesquisa de acordo com a url informada</p>
 
 <div align="center">
     <img width="90%" src="src/main/resources/imgs/select2.png">
@@ -47,6 +53,13 @@
 
 <div align="center">
     <img width="90%" src="src/main/resources/imgs/salvar.png">
+</div>
+
+<h3>Controller</h3>
+<p>valida a URL passada usando o Código acima, adiciona atributos para o thymeleaft identificar e devolve o html de resultado</p>
+
+<div align="center">
+    <img width="90%" src="src/main/resources/imgs/post.png">
 </div>
 
 <h2>Tabelas hospedadas na nuvem da Railway</h2>
