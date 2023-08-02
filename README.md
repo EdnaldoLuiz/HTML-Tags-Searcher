@@ -10,7 +10,7 @@
 <h2>Estrutura do Projeto:</h2>
 
 <div align="center">
-    <img width="90%" src="src/main/resources/imgs/tree.png">
+    <img width="30%" src="src/main/resources/imgs/tree.png">
 </div>
 
 <h2>Visao geral do Projeto:</h2>
