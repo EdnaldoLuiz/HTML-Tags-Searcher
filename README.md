@@ -14,17 +14,52 @@
     <img width="90%" src="src/main/resources/imgs/form.png">
 </div>
 
+<h3>URL passada incorretamente</h3>
+
+<div align="center">
+    <img width="90%" src="src/main/resources/imgs/erro.png">
+</div>
+
 <h3>Tabela de resultados</h3>
 
 <div align="center">
     <img width="90%" src="src/main/resources/imgs/resultado.png">
 </div>
 
-<h2>Tabelas SQL e consultas:</h2>
-<p> os arquivos SQL presentes no projeto, podem ser encontrados em src/main/resources/db/migration/</p>
+<h2>Código MySQL:</h2>
+<h3>Tabelas</h3>
+<p> os arquivos das tabelas SQL presentes no projeto, podem ser encontrados em src/main/resources/db/migration/</p>
 
 <div align="center">
     <img width="90%" src="src/main/resources/imgs/tables.png">
+</div>
+
+<h3>Consultas</h3>
+<p>consulta que retorna todas as tags e suas quantidades econtradas que foram salvas na pesquiva de acordo com a url informada</p>
+
+<div align="center">
+    <img width="90%" src="src/main/resources/imgs/select2.png">
+</div>
+
+<h2>Código Java:</h2>
+<h3>Salvar no banco de dados</h3>
+<p>verificar se a URL esta sendo valida, remover os espaços em branco, e caso ela não esteja presente no banco de dados, salvar</p>
+
+<div align="center">
+    <img width="90%" src="src/main/resources/imgs/salvar.png">
+</div>
+
+<h2>Tabelas hospedadas na nuvem da Railway</h2>
+<h3>Tabela de URLs</h3>
+
+<div align="center">
+    <img width="90%" src="src/main/resources/imgs/tb_urls.png">
+</div>
+
+<h3>Tabela de Tags e suas quantidades</h3>
+
+<div align="center">
+    <img width="90%" src="src/main/resources/imgs/tb_tags.png">
 </div>
 
 <h2>Principais Bibliotecas para a Solução:</h2>
