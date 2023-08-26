@@ -7,6 +7,7 @@ import com.nuti.nuti.repository.UrlsRepository;
 import com.nuti.nuti.service.HtmlParserService;
 import com.nuti.nuti.service.UrlValidator;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -33,8 +34,8 @@ public class TagInfoController {
 
     @GetMapping("/")
     public String exibirFormularioETabelas(Model model) {
-        List<Urls> urlList = urlsRepository.findAll();
-        List<Tags> tagList = tagsRepository.findAll();
+        List<Urls> urlList = urlsRepository.findAll(Sort.by(Sort.Direction.DESC, "id"));
+        List<Tags> tagList = tagsRepository.findAll(Sort.by(Sort.Direction.DESC, "urlInfo.id"));
         
         model.addAttribute("urlList", urlList);
         model.addAttribute("tagList", tagList);
@@ -42,12 +43,9 @@ public class TagInfoController {
         return "index";
     }
 
-
     @PostMapping("/")
     public String processarUrl(@RequestParam("url") String url, Model model) throws IOException {
-
         Urls urlInfo = validador.validarESalvar(url);
-
         List<Tags> tagList = parseador.buscarESalvar(url, urlInfo);
 
         model.addAttribute("tagInfoList", tagList);
