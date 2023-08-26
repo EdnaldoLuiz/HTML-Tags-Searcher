@@ -1,17 +1,4 @@
- <h1 align="center"> Nuti-desafio-tags</h1>
-
-<h2>Observaçoes:</h2>
-<p>existem algumas tags que não são muito conhecidas, mas existem e fazem um conjunto com a tag de svg, alem de outras que so são possiveis com auxilio de frameworks.</p>
-
-<div align="center">
-    <img width="90%" src="src/main/resources/imgs/code.png">
-</div>
-
-<h2>Estrutura do Projeto:</h2>
-
-<div align="center">
-    <img width="30%" src="src/main/resources/imgs/tree.png">
-</div>
+<h1 align="center"> Nuti-desafio-tags</h1>
 
 <h2>Visao geral do Projeto:</h2>
 <h3>Formulario de busca</h3>
@@ -38,60 +25,47 @@
     <img width="90%" src="src/main/resources/imgs/resultado.png">
 </div>
 
+<h2>Diagrama de Classes:</h2>
+
+```mermaid
+classDiagram
+    class Tags {
+        + Long id
+        + String tag
+        + Long quantidade
+        + Urls urlInfo
+    }
+    
+    class Urls {
+        + Long id
+        + String url
+    }
+    
+    Tags "1" -- "many" Urls : urlInfo
+
+```
+
 <h2>Código MySQL:</h2>
-<h3>Tabelas</h3>
-<p> os arquivos das tabelas SQL presentes no projeto, podem ser encontrados em src/main/resources/db/migration/</p>
+<h3>Tabela de urls</h3>
 
-<div align="center">
-    <img width="90%" src="src/main/resources/imgs/tables.png">
-</div>
+```sql
+CREATE TABLE tb_urls (
+  id BIGINT AUTO_INCREMENT PRIMARY KEY,
+  url VARCHAR(255) NOT NULL
+);
+```
 
-<h3>Consultas</h3>
-<p>consulta que retorna todas as tags e suas quantidades econtradas que foram salvas na pesquisa de acordo com a url informada</p>
+<h3>Tabela de tags</h3>
 
-<div align="center">
-    <img width="90%" src="src/main/resources/imgs/select2.png">
-</div>
-
-<h2>Código Java:</h2>
-
-<h3>Interfaces responsaveis para salvar</h3>
-<p>verificar se a URL esta sendo valida, remover os espaços em branco, e caso ela não esteja presente no banco de dados, salvar</p>
-
-<div align="center">
-    <img width="90%" src="src/main/resources/imgs/interface1.png">
-</div>
-
-<div align="center">
-    <img width="90%" src="src/main/resources/imgs/interface2.png">
-</div>
-
-<h3>Salvar no banco de dados</h3>
-<p>verificar se a URL esta sendo valida, remover os espaços em branco, e caso ela não esteja presente no banco de dados, salvar</p>
-
-<div align="center">
-    <img width="90%" src="src/main/resources/imgs/salvar.png">
-</div>
-
-<h3>Controller</h3>
-<p>valida a URL passada usando o Código acima, adiciona atributos para o thymeleaft identificar e devolve o html de resultado</p>
-
-<div align="center">
-    <img width="90%" src="src/main/resources/imgs/post.png">
-</div>
-
-<h2>Tabelas hospedadas na nuvem da Railway</h2>
-<h3>Tabela de URLs</h3>
-
-<div align="center">
-    <img width="90%" src="src/main/resources/imgs/tb_urls.png">
-</div>
-
-<h3>Tabela de Tags e suas quantidades</h3>
-
-<div align="center">
-    <img width="90%" src="src/main/resources/imgs/tb_tags.png">
-</div>
+```sql
+CREATE TABLE tb_tags (
+  id BIGINT AUTO_INCREMENT PRIMARY KEY,
+  tag VARCHAR(255) NOT NULL,
+  quantidade BIGINT,
+  url_info_id BIGINT,
+  FOREIGN KEY (url_info_id) REFERENCES tb_urls(id)
+);
+```
 
 <h2>Principais Bibliotecas para a Solução:</h2>
 
