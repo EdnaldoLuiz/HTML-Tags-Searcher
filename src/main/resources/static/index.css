@@ -69,6 +69,19 @@ h1 {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+  flex-direction: row;
+}
+
+.tables-container {
+  display: flex;
+  gap: 30px;
+  max-width: 1400px;
+  margin: 4rem auto;
+}
+
+.table-container {
+  flex: 1;
+  display: flex;
   flex-direction: column;
 }
 

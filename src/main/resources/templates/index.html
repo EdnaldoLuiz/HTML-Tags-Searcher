@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <link th:href="@{index.css}" rel="stylesheet" />
-    <title>Buscador de Tags</title>
-  </head>
-  <body>
-    <div class="header">
-      <h1>Digite uma URL válida</h1>
-      <p>ela será enviada ao banco de dados, junto das tags e quantidades</p>
-    </div>
-    <form class="url-form" method="post">
-      <label for="url">URL:</label>
-      <input type="text" id="url" name="url" required />
-      <button type="submit">Ver resultados</button>
-    </form>
 
-    <div class="tables-container">
+<head>
+  <meta charset="UTF-8" />
+  <link th:href="@{index.css}" rel="stylesheet" />
+  <title>Buscador de Tags</title>
+</head>
+
+<body>
+  <div class="header">
+    <h1>Digite uma URL válida</h1>
+    <p>ela será enviada ao banco de dados, junto das tags e quantidades</p>
+  </div>
+  <form class="url-form" method="post">
+    <label for="url">URL:</label>
+    <input type="text" id="url" name="url" required />
+    <button type="submit">Ver resultados</button>
+  </form>
+
+  <div class="tables-container">
+    <div class="table-container">
       <h1>Tabela de URLs</h1>
       <div class="table-scroll">
         <div class="tableFixHead">
@@ -36,7 +39,9 @@
           </table>
         </div>
       </div>
+    </div>
 
+    <div class="table-container">
       <h1>Tabela de Tags</h1>
       <div class="table-scroll">
         <div class="tableFixHead">
@@ -61,5 +66,7 @@
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
