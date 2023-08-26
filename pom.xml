@@ -8,8 +8,8 @@
 		<version>3.1.2</version>
 		<relativePath/>
 	</parent>
-	<groupId>com.nuti</groupId>
-	<artifactId>nuti</artifactId>
+	<groupId>com.html.tags.searcher</groupId>
+	<artifactId>html.tags</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>nuti</name>
 	<description>Demo project for Spring Boot</description>

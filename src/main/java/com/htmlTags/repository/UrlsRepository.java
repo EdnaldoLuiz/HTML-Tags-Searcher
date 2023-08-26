@@ -1,8 +1,8 @@
-package com.nuti.nuti.repository;
+package com.htmlTags.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.nuti.nuti.model.Urls;
+import com.htmlTags.model.Urls;
 
 public interface UrlsRepository extends JpaRepository<Urls, Long> {
     // Metodo criado para procurar pela URL 

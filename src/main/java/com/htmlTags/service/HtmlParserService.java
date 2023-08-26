@@ -1,12 +1,13 @@
-package com.nuti.nuti.service;
+package com.htmlTags.service;
 
-import com.nuti.nuti.model.Tags;
-import com.nuti.nuti.model.Urls;
-import com.nuti.nuti.repository.TagsRepository;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import com.htmlTags.model.Tags;
+import com.htmlTags.model.Urls;
+import com.htmlTags.repository.TagsRepository;
 
 import java.io.IOException;
 import java.util.List;

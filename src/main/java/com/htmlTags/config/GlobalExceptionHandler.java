@@ -1,4 +1,4 @@
-package com.nuti.nuti.config;
+package com.htmlTags.config;
 
 import java.io.IOException;
 import java.net.MalformedURLException;

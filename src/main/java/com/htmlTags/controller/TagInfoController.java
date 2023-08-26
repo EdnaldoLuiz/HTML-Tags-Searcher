@@ -1,11 +1,8 @@
-package com.nuti.nuti.controller;
+package com.htmlTags.controller;
 
-import com.nuti.nuti.model.Tags;
-import com.nuti.nuti.model.Urls;
-import com.nuti.nuti.repository.TagsRepository;
-import com.nuti.nuti.repository.UrlsRepository;
-import com.nuti.nuti.service.HtmlParserService;
-import com.nuti.nuti.service.UrlValidator;
+import java.io.IOException;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
@@ -14,8 +11,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import java.io.IOException;
-import java.util.List;
+import com.htmlTags.repository.UrlsRepository;
+import com.htmlTags.model.Tags;
+import com.htmlTags.model.Urls;
+import com.htmlTags.repository.TagsRepository;
+import com.htmlTags.service.HtmlParserService;
+import com.htmlTags.service.UrlValidator;
 
 @Controller
 public class TagInfoController {
@@ -34,7 +35,7 @@ public class TagInfoController {
 
     @GetMapping("/")
     public String exibirFormularioETabelas(Model model) {
-        List<Urls> urlList = urlsRepository.findAll(Sort.by(Sort.Direction.DESC, "id"));
+        List<Urls> urlList = urlsRepository.findAll();
         List<Tags> tagList = tagsRepository.findAll(Sort.by(Sort.Direction.DESC, "urlInfo.id"));
         
         model.addAttribute("urlList", urlList);
@@ -51,6 +52,6 @@ public class TagInfoController {
         model.addAttribute("tagInfoList", tagList);
         model.addAttribute("url", url.trim());
 
-        return "result"; // Redireciona para a página de resultado se a URL passar
+        return "result";
     }
 }

@@ -1,11 +1,11 @@
-package com.nuti.nuti.service;
+package com.htmlTags.service;
 
 import org.jsoup.Jsoup;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.nuti.nuti.model.Urls;
-import com.nuti.nuti.repository.UrlsRepository;
+import com.htmlTags.model.Urls;
+import com.htmlTags.repository.UrlsRepository;
 
 import java.io.IOException;
 import java.net.MalformedURLException;

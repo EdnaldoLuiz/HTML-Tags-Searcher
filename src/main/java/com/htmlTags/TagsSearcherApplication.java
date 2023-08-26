@@ -1,13 +1,12 @@
-package com.nuti.nuti;
-
+package com.htmlTags;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class NutiApplication {
+public class TagsSearcherApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(NutiApplication.class, args);
+		SpringApplication.run(TagsSearcherApplication.class, args);
 	}
 
 }
