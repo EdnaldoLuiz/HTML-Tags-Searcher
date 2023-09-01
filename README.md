@@ -25,6 +25,79 @@
     <img width="90%" src="src/main/resources/imgs/resultado.png">
 </div>
 
+<h2>Problema</h2>
+<ul>
+	<li>No código de uma página HTML há diversas tags para apresentar o conteúdo da melhor forma.</li>
+	<li>Para uma análise mais cautelosa, há o interesse de contabilizar a quantidade de cada tag HTML em uma determinada página.</li>
+	<li>É necessário criar um programa para identificar as tags HTML existentes nas páginas que forem carregadas por meio da URL informada.</li>
+	<li>Deve ser contado quantas vezes cada tag aparece em cada página.</li>
+	<li>É necessário mostrar as informações coletadas para possibilitar verificar os dados da URL informada.</li>
+	<li>Assim, as URL, tags e as respectivas contagens devem ser armazenadas em um banco de dados.</li>
+</ul>
+
+<h2>Exemplo</h2>
+<html>
+
+    <head>
+
+      <title>Teste prático</title>
+
+    </head>
+
+    <body>
+
+      <h1>Olá</h1>
+
+      <p>Teste 1</p>
+
+      <p>Teste 2</p>
+
+      <p>Teste 3</p>
+
+    </body>
+
+</html>
+
+
+<h2>Resultado</h2>
+
+<div align="center">
+<table border="1">
+    <thead>
+      <tr>
+        <th>Tag</th>
+        <th>Quantidade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>html</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>head</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>title</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>body</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>h1</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>p</td>
+        <td>3</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+  
 <h2>Diagrama de Classes:</h2>
 
 ```mermaid
