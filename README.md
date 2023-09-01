@@ -36,29 +36,20 @@
 </ul>
 
 <h2>Exemplo</h2>
+
+```html
 <html>
-
-    <head>
-
+   <head>
       <title>Teste prático</title>
-
-    </head>
-
-    <body>
-
+   </head>
+   <body>
       <h1>Olá</h1>
-
       <p>Teste 1</p>
-
       <p>Teste 2</p>
-
       <p>Teste 3</p>
-
-    </body>
-
+   </body>
 </html>
-
-
+```
 <h2>Resultado</h2>
 
 <div align="center">
@@ -196,4 +187,9 @@ Bilioteca usada para integrar as respostas do controller em páginas html
 	<artifactId>spring-boot-starter-thymeleaf</artifactId>
 </dependency>
 ```
+## Tech Stack utilizada:
+<div align="center">
+    <img width="90%" src="https://github.com/EdnaldoLuiz/HTML-Tags-Searcher/assets/112354693/6229289f-952d-48fd-be78-ce20aa0c1a8d">
+</div>
+
 
