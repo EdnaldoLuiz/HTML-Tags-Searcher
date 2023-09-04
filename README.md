@@ -1,29 +1,55 @@
 <h1 align="center"> Nuti-desafio-tags</h1>
 
 <h2>:computer: Visao geral do Projeto:</h2>
-<h3>:page_facing_up: Formulario de busca:</h3>
 
-<div align="center">
-    <img width="90%" src="src/main/resources/imgs/form.png">
-</div>
-
-<h3>:bar_chart: Tabela com todos registros do MySQL</h3>
-
-<div align="center">
-    <img width="90%" src="src/main/resources/imgs/table.png">
-</div>
-
-<h3>:x: URL passada incorretamente: </h3>
-
-<div align="center">
-    <img width="90%" src="src/main/resources/imgs/erro.png">
-</div>
-
-<h3>:bar_chart: Tabela de resultados: </h3>
-
-<div align="center">
-    <img width="90%" src="src/main/resources/imgs/resultado.png">
-</div>
+ <table>
+    <thead>
+        <tr>
+            <th align="center">
+                <img width="20" height="1"> 
+                <p align="center"><small>Nome</small></p>
+            </th>
+            <th align="center">
+                <img width="300" height="1"> 
+                <p align="center"><small>Descrição</small></p>
+            </th>
+            <th align="left">
+                <img width="140" height="1">
+                <p align="center"><small>Imagem</small></p>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td align="center">:page_facing_up: Formulario de busca:</td>
+            <td>Campo de entrada do usuário para buscar tags com base na URL fornecida.</td>
+            <td align="center">
+            	<img width="100%" src="src/main/resources/imgs/form.png">
+	    </td>
+        </tr>
+        <tr>
+            <td align="center">:bar_chart: Tabela com todos registros do MySQL</td>
+            <td>Tabelas de URLs e Tags com os dados existentes no banco de dados.</td>
+            <td align="center">
+           	<img width="100%" src="src/main/resources/imgs/table.png">
+	    </td>
+        </tr>
+	<tr>
+            <td align="center">:x: URL passada incorretamente:</td>
+            <td>Caso a URL passada seja inexistente.</td>
+            <td align="center">
+           	<img width="100%" src="src/main/resources/imgs/erro.png">
+	    </td>
+        </tr>
+	<tr>
+            <td align="center">:bar_chart: Tabela de resultados: </td>
+            <td>Tabela com o resultado retornado da pesquisa passada no campo de busca.</td>
+            <td align="center">
+           	<img width="100%" src="src/main/resources/imgs/resultado.png">
+	    </td>
+        </tr>
+    </tbody>
+</table>
 
 <h2>:bangbang: Problema</h2>
 <ul>
