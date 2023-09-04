@@ -1,31 +1,31 @@
 <h1 align="center"> Nuti-desafio-tags</h1>
 
-<h2>Visao geral do Projeto:</h2>
-<h3>Formulario de busca</h3>
+<h2>:computer: Visao geral do Projeto:</h2>
+<h3>:page_facing_up: Formulario de busca:</h3>
 
 <div align="center">
     <img width="90%" src="src/main/resources/imgs/form.png">
 </div>
 
-<h3>Tabela com todos registros do MySQL</h3>
+<h3>:bar_chart: Tabela com todos registros do MySQL</h3>
 
 <div align="center">
     <img width="90%" src="src/main/resources/imgs/table.png">
 </div>
 
-<h3>URL passada incorretamente</h3>
+<h3>:x: URL passada incorretamente: </h3>
 
 <div align="center">
     <img width="90%" src="src/main/resources/imgs/erro.png">
 </div>
 
-<h3>Tabela de resultados</h3>
+<h3>:bar_chart: Tabela de resultados: </h3>
 
 <div align="center">
     <img width="90%" src="src/main/resources/imgs/resultado.png">
 </div>
 
-<h2>Problema</h2>
+<h2>:bangbang: Problema</h2>
 <ul>
 	<li>No código de uma página HTML há diversas tags para apresentar o conteúdo da melhor forma.</li>
 	<li>Para uma análise mais cautelosa, há o interesse de contabilizar a quantidade de cada tag HTML em uma determinada página.</li>
@@ -35,7 +35,7 @@
 	<li>Assim, as URL, tags e as respectivas contagens devem ser armazenadas em um banco de dados.</li>
 </ul>
 
-<h2>Exemplo</h2>
+<h2>:clipboard: Exemplo: </h2>
 
 ```html
 <html>
@@ -50,7 +50,7 @@
    </body>
 </html>
 ```
-<h2>Resultado</h2>
+<h2>:white_check_mark: Resultado: </h2>
 
 <div align="center">
 <table border="1">
@@ -89,7 +89,7 @@
   </table>
 </div>
   
-<h2>Diagrama de Classes:</h2>
+<h2>:memo: Diagrama de Classes:</h2>
 
 ```mermaid
 classDiagram
@@ -109,8 +109,8 @@ classDiagram
 
 ```
 
-<h2>Código MySQL:</h2>
-<h3>Tabela de urls</h3>
+<h2>:dolphin: Código MySQL:</h2>
+<h3> :memo: Tabela de urls: </h3>
 
 ```sql
 CREATE TABLE tb_urls (
@@ -119,7 +119,7 @@ CREATE TABLE tb_urls (
 );
 ```
 
-<h3>Tabela de tags</h3>
+<h3>:memo: Tabela de tags: </h3>
 
 ```sql
 CREATE TABLE tb_tags (
@@ -131,10 +131,10 @@ CREATE TABLE tb_tags (
 );
 ```
 
-<h2>Principais Bibliotecas para a Solução:</h2>
+<h2>:books: Principais Bibliotecas para a Solução:</h2>
 
 ### JSoup
-Bilioteca usada para extrair a quantidade de tags e seus respectivos nomes das URLs informadas
+- Bilioteca usada para extrair a quantidade de tags e seus respectivos nomes das URLs informadas
 
 ```xml
 <dependency>
@@ -145,7 +145,7 @@ Bilioteca usada para extrair a quantidade de tags e seus respectivos nomes das U
 ```
 
 ### Flyway
-Bilioteca usada para criar as tabelas do banco de dados dentro da pasta db/migration
+- Bilioteca usada para criar as tabelas do banco de dados dentro da pasta db/migration
 ```xml
 <dependency>
     <groupId>org.flywaydb</groupId>
@@ -158,7 +158,7 @@ Bilioteca usada para criar as tabelas do banco de dados dentro da pasta db/migra
 </dependency>
 ```
 ### MySQL-connector
-Bilioteca usada para conectar o projeto ao MySQL
+- Bilioteca usada para conectar o projeto ao MySQL
 
 ```xml
 <dependency>
@@ -169,7 +169,7 @@ Bilioteca usada para conectar o projeto ao MySQL
 ```
 
 ### JPA
-Bilioteca usada para utilizar as interfaces e anotações ajudando a manipular os dados
+- Bilioteca usada para utilizar as interfaces e anotações ajudando a manipular os dados
 
 ```xml
 <dependency>
@@ -177,9 +177,8 @@ Bilioteca usada para utilizar as interfaces e anotações ajudando a manipular o
     <artifactId>spring-boot-starter-data-jpa</artifactId>
 </dependency>
 ```
-
 ### Thymeleaf
-Bilioteca usada para integrar as respostas do controller em páginas html
+  - Bilioteca usada para integrar as respostas do controller em páginas html
 
 ```xml
 <dependency>
@@ -187,7 +186,7 @@ Bilioteca usada para integrar as respostas do controller em páginas html
 	<artifactId>spring-boot-starter-thymeleaf</artifactId>
 </dependency>
 ```
-## Tech Stack utilizada:
+## :wrench: Tech Stack utilizada:
 <div align="center">
     <img width="90%" src="https://github.com/EdnaldoLuiz/HTML-Tags-Searcher/assets/112354693/6229289f-952d-48fd-be78-ce20aa0c1a8d">
 </div>
