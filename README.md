@@ -1,5 +1,9 @@
 <h1 align="center"> Nuti-desafio-tags</h1>
 
+<div align="center">
+  <img src="https://img.shields.io/badge/license-MIT-green">
+</div>
+
 <h2>:computer: Visao geral do Projeto:</h2>
 
  <table>
